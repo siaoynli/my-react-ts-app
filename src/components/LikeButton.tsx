@@ -8,8 +8,9 @@ const LikeButton: React.FC = () => {
     })
 
     useEffect(() => {
+        console.log("document useEffect running")
         document.title = `点击了${obj.like}次`
-    })
+    }, [obj.like])
 
 
     return (

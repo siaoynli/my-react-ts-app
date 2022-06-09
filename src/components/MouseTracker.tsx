@@ -17,7 +17,7 @@ export const MouseTracker: React.FC = () => {
             console.log("remove")
             document.removeEventListener("click", updateMouse);
         }
-    });
+    }, []);
 
 
     return (
