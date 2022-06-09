@@ -5,14 +5,15 @@ interface IHelloProps {
 }
 
 
-const Hello:React.FC<IHelloProps> =  (props)=> {
+const Hello: React.FC<IHelloProps> = (props) => {
     return <h1>{props.message} </h1>
 }
 
 
 
-Hello.defaultProps={
+Hello.defaultProps = {
     message: 'Hello world2'
 }
 
 export default Hello
+
